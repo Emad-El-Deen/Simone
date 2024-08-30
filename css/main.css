@@ -1,0 +1,240 @@
+/* start Variables */
+:root {
+    --main-color: rgb(32, 201, 151);
+    --second-color: #fff;
+
+}
+
+.btn-primary,
+.btn-outline-primary {
+    background-color: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: #fff !important;
+}
+
+/* Start Global variables */
+
+.btn-outline-primary:hover,
+.btn-primary:hover,
+.bg-primary,
+.progress-bar {
+    border: 1px solid var(--main-color);
+    color: #fff !important;
+    background-color: #1cb486 !important;
+}
+
+.list-style-2 li a,
+.text-primary,
+.border-primary {
+    color: var(--main-color) !important;
+}
+
+::selection {
+    background: #20c997;
+    color: #fff;
+    text-shadow: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* End Global variables */
+
+/* start Header (nav + landing) */
+.home {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/intro-bg-850.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+
+.home li a {
+    color: white;
+    font-size: 18px;
+}
+
+.home li .active,
+.Portfolio li .active {
+    color: var(--main-color) !important;
+}
+
+.nav-link:hover {
+    color: var(--main-color) !important;
+}
+
+
+i {
+    color: white;
+}
+
+.icon a .fa-twitter:hover {
+    color: #0d6efd !important;
+}
+
+.icon a .fa-facebook-f:hover {
+    color: #0a58ca;
+}
+
+.icon a .fa-dribbble:hover {
+    color: #d63384;
+}
+
+.landing h2::after {
+    content: "|";
+    animation-name: typing;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+/* End Landing */
+
+/* Start About */
+
+.one {
+    font-size: 80px;
+}
+
+.list-style-2>li {
+    list-style-type: none;
+    border-bottom: 1px solid #eaeaea;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+}
+
+.list-style-2>:last-child {
+    border: none;
+}
+
+
+.featured-box {
+    list-style-type: none;
+    border-right: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+}
+
+/* End About */
+
+/* Start resume */
+.text-center a:hover i {
+    color: white !important;
+}
+
+/* End Resume */
+
+/* Start portflio */
+
+
+
+
+
+.portfolio .portfolio-box {
+  position: relative;
+}
+
+.portfolio .portfolio-box .portfolio-img {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-filter{
+    height: 1200px;
+}
+.portfolio .portfolio-box .portfolio-overlay {
+  text-align: center;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-box:hover .portfolio-overlay {
+  opacity: 1;
+}
+
+.portfolio .portfolio-box .portfolio-img img {
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio .portfolio-box:hover .portfolio-img img {
+  filter: blur(2px);
+  transform: scale(1.03);
+}
+
+.portfolio .portfolio-box .portfolio-overlay-details {
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.portfolio .portfolio-details {
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+/* End portflio */
+
+/* Start testimonial */
+.clients .carousel-indicators span {
+    border-radius: 50%;
+    margin: 10px;
+    border: 1px solid var(--main-color);
+}
+
+.clients .carousel-indicators .active {
+    background-color: var(--main-color) !important;
+
+}
+
+.clients button {
+    height: 12px !important;
+    width: 12px !important;
+    border: 0 !important;
+    margin: 6px !important;
+    border-radius: 50%;
+    border: 1px solid var(--main-color) !important;
+
+}
+
+.clients .carousel-indicators span:hover button {
+
+    background-color: var(--main-color) !important;
+
+
+}
+/* End testimonial */
+
+
+/* start Contact */
+.contact p i {
+    color: var(--main-color);
+}
+
+.contact li {
+    padding: 0 10px;
+}
+
+.contact li i {
+    color: black;
+    font-size: 20px;
+}
+.contact li i:hover {
+    color: var(--main-color) !important;
+}
+/* End Contact */
+
+/* Start footer */
+.footer p a{
+color: var(--main-color) !important;
+}
+/* End footer */
